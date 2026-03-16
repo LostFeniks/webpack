@@ -7,6 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/css/style.css"
@@ -15,7 +16,6 @@
   \***************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-project/./src/css/style.css?\n}");
 
 /***/ },
@@ -26,8 +26,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-ext
   \**********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/app */ \"./src/js/app.js\");\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_app__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack://webpack-project/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/app */ \"./src/js/app.js\");\n\r\n\n\n//# sourceURL=webpack://webpack-project/./src/index.js?\n}");
 
 /***/ },
 
@@ -35,9 +34,29 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cs
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-() {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{console.log('app worked');\n\n//# sourceURL=webpack://webpack-project/./src/js/app.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game */ \"./src/js/game.js\");\nconsole.log('app worked');\r\n\r\n\r\nconst game = new _game__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\ngame.start();\n\n//# sourceURL=webpack://webpack-project/./src/js/app.js?\n}");
+
+/***/ },
+
+/***/ "./src/js/domain.js"
+/*!**************************!*\
+  !*** ./src/js/domain.js ***!
+  \**************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Character)\n/* harmony export */ });\nclass Character {\r\n\r\n}\n\n//# sourceURL=webpack://webpack-project/./src/js/domain.js?\n}");
+
+/***/ },
+
+/***/ "./src/js/game.js"
+/*!************************!*\
+  !*** ./src/js/game.js ***!
+  \************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GameSavingData: () => (/* binding */ GameSavingData),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   readGameSaving: () => (/* binding */ readGameSaving),\n/* harmony export */   writeGameSaving: () => (/* binding */ writeGameSaving)\n/* harmony export */ });\n/* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ \"./src/js/domain.js\");\n\r\n\r\nclass Game {\r\n  start() {\r\n    console.log('game started');\r\n  }\r\n}\r\n\r\nclass GameSavingData {\r\n\r\n}\r\n\r\nfunction readGameSaving() {\r\n\r\n}\r\n\r\nfunction writeGameSaving() {\r\n\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Game);\r\n\n\n//# sourceURL=webpack://webpack-project/./src/js/game.js?\n}");
 
 /***/ }
 
@@ -74,18 +93,6 @@ eval("{console.log('app worked');\n\n//# sourceURL=webpack://webpack-project/./s
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
